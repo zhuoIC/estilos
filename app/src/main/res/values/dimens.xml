@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <dimen name="lly_login_padding">32dp</dimen>
+    <dimen name="txvSignIn_margin">32dp</dimen>
+    <dimen name="edtUser_margin">8dp</dimen>
+    <dimen name="btnSignIn_margin">32dp</dimen>
+    <dimen name="btnSigIn_width">200dp</dimen>
+    <dimen name="lly_SignIn_padding">32dp</dimen>
+</resources>

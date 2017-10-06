@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginLinearLayout</string>
+    <string name="txvSignIn">Acceder</string>
+    <string name="txvUser">Nombre de usuario / correo electrónico</string>
+    <string name="txvPassword">Contraseña</string>
+    <string name="chkRemember">Recordar usuario</string>
+    <string name="btnSignUp">Registro</string>
+    <string name="btnSignIn">Acceder</string>
+    <string name="btnGoogleSignIn">Google</string>
+    <string name="btnFacebookSignIn">Login in with Facebook</string>
+</resources>

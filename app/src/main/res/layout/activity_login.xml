@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginlinearlayout.LoginActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/lly_login_padding"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/txvSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/txvSignIn_margin"
+        android:text="@string/txvSignIn"
+        android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
+
+    <TextView
+        android:id="@+id/txvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtUser"
+        android:text="@string/txvUser"
+        android:textAppearance="@android:style/TextAppearance.Small.Inverse" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:layout_marginBottom="@dimen/edtUser_margin"
+        android:background="@drawable/shape_edittext"
+        style="@style/LoginEditText"/>
+
+    <TextView
+        android:id="@+id/txvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtPassword"
+        android:text="@string/txvPassword"
+        android:textAppearance="@android:style/TextAppearance.Small.Inverse" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.Large.Inverse"
+        android:background="@drawable/shape_edittext"
+        style="@style/LoginEditText"/>
+
+    <LinearLayout
+        android:id="@+id/llySignInOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/lly_SignIn_padding">
+
+        <CheckBox
+            android:id="@+id/chkRemember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/chkRemember"
+            android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+            style="@style/Widget.CompoundButton.CheckBox"/>
+
+        <TextView
+            android:id="@+id/txvSingUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/btnSignUp"
+            android:textAppearance="@android:style/TextAppearance.Small.Inverse" />
+
+    </LinearLayout>
+    <!-- Cuidado al aplicar el margen en un estilo en la etiqueta porque
+    se redibuja el componente, con lo cual -->
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="@dimen/btnSigIn_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnSignIn_margin"
+        android:background="@color/colorFacebook"
+        android:text="@string/btnSignIn" />
+
+    <Button
+        android:id="@+id/btnGoogleSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGoogle"
+        android:drawableStart="@drawable/ic_google"
+        android:text="@string/btnGoogleSignIn" />
+
+    <Button
+        android:id="@+id/btnFacebookSignIn"
+        style="@style/Widget.Button.Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFacebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/btnFacebookSignIn" />
+
+</LinearLayout>
