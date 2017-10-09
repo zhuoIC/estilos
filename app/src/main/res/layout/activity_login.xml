@@ -66,8 +66,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
             android:text="@string/chkRemember"
-            android:textAppearance="@android:style/TextAppearance.Small.Inverse"
-            style="@style/Widget.CompoundButton.CheckBox"/>
+            android:theme="@style/LoginCheckBox"
+            style="@style/LetrasBlancasCheckBox"/>
 
         <TextView
             android:id="@+id/txvSingUp"
