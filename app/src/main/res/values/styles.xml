@@ -22,9 +22,12 @@
     <style name="LoginEditText">
         <item name="android:padding">8dp</item>
     </style>
-    <style name="CheckBox_RememberMe" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <style name="LoginCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="colorAccent">@android:color/darker_gray</item>
+    </style>
+    <style name="LetrasBlancasCheckBox" parent="android:Widget.CompoundButton.CheckBox">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:checkboxStyle">@android:color/darker_gray</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 
 </resources>
